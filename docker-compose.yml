@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  lastfm:
+    build:
+      context: /home/webuser/app/docker/
+    container_name: docker
+    restart: always
+    volumes:
+      - /home/webuser/app/docker:/home/docker/docker
+      - /home/webuser/http/www/music:/home/docker/docker/music
+    command: sh -c "/home/docker/pyvenv/bin/python3 /home/docker/docker/main.py"
+
