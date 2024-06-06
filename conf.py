@@ -7,6 +7,9 @@ import pylast
 API_KEY = ""
 API_SECRET = ""
 USERNAME = ""
+SPOTIFY_CID = ''
+SPOTIFY_SECRET = ''
+SPOTIFY_PL_ID = 'spotify:playlist:<id>'
 
 
 lastfm_network = pylast.LastFMNetwork(
