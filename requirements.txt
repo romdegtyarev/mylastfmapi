@@ -1,0 +1,4 @@
+schedule
+pylast
+spotipy
+python-dotenv
