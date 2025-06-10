@@ -1,10 +1,10 @@
 version: "3.3"
 
 services:
-  lastfm:
-    build:
-      context: .
-    container_name: lastfm-bot
+  mylastfmapi:
+    build: .
+    image: mylastfmapi:latest
+    container_name: mylastfmapibot
     restart: always
     volumes:
       - /home/webuser/http/www/music:/app/music
